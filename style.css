@@ -1,0 +1,44 @@
+body {
+  background-color: gray;
+  color: white;
+  margin: 0;
+  padding-top: 5%;
+}
+.container {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.table {
+  border: 1px solid black;
+  border-collapse: collapse;
+}
+
+button {
+  display: inline-block;
+  font-size: 1vw;
+
+  min-width: 10vw;
+  max-width: 15vw;
+  align-self: center;
+}
+@media screen and (max-width: 600px) {
+  button {
+    display: inline-block;
+    font-size: 0.6vw;
+
+    min-width: 8vw;
+    max-width: 20vw;
+    align-self: center;
+  }
+  .table {
+    max-width: 80%;
+    font-size: 4vw;
+  }
+
+  .container > #table {
+    align-self: center;
+  }
+}
